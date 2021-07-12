@@ -1,5 +1,6 @@
-import { Component, Prop, h } from '@stencil/core';
-import { format } from '../../utils/utils';
+import {Component, h, Prop} from '@stencil/core';
+import {format} from '../../utils/utils';
+import {User} from "../../../../models/User";
 
 @Component({
   tag: 'my-component',
@@ -22,7 +23,12 @@ export class MyComponent {
    */
   @Prop() last: string;
 
+  getUser(user: User) {
+    return user;
+  }
+
   private getText(): string {
+    console.log(this.getUser({firstName: this.first, lastName: this.last, age: 100}))
     return format(this.first, this.middle, this.last);
   }
 
