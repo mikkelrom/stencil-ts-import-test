@@ -10,5 +10,8 @@ Steps to reproduce:
 
 How to stop it from doing that? :)
 
+--- 
+
 **UPDATE:**
+
 Renaming `models/User.ts` to `models/User.d.ts` fixed the issue 🎉
