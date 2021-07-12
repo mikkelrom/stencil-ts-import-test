@@ -9,3 +9,6 @@ Steps to reproduce:
 1. see that file `webcomponents/models/User.js` has been generated
 
 How to stop it from doing that? :)
+
+**UPDATE:**
+Renaming `models/User.ts` to `models/User.d.ts` fixed the issue 🎉
