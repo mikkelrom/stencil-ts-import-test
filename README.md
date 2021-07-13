@@ -15,3 +15,5 @@ How to stop it from doing that? :)
 **UPDATE:**
 
 Renaming `models/User.ts` to `models/User.d.ts` fixed the issue 🎉
+
+Reference: https://github.com/Microsoft/TypeScript/issues/15950
